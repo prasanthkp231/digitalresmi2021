@@ -75,16 +75,9 @@
         <div class='feature pagefx hardpage'>
 		<!--<img class="page" src="pages/2019oct15/0002.jpg">-->
         </div>
-		<% for i=3 to 9 %>
-		<div class='responsive feature'>
-		<img class="page" src="pages/2019nov8/dijiresmi2019nov2019_page-000<%=i%>.jpg">
-        </div>	
-		<% next  %>
-		<% for i=10 to 58 %>
-		<div class='responsive feature'>
-		<img class="page" src="pages/2019nov8/dijiresmi2019nov2019_page-00<%=i%>.jpg">
-        </div>	
-		<% next  %>
+		<div id="pages">
+
+		</div>
 		<div class='responsive feature'>
         </div>
 		<div class='last_cover'>
@@ -112,6 +105,16 @@
 
 <script type="text/javascript">
     $(document).ready(function() {
+		for(i=3;i<9;i++){
+			$('#pages').append('<div class="responsive feature">' +
+									'<img class="page" src="pages/2019nov8/dijiresmi2019nov2019_page-000' + i +'jpg">' +
+								'</div>');
+		}
+		for(i=10;i<58;i++){
+			$('#pages').append('<div class="responsive feature">' +
+									'<img class="page" src="pages/2019nov8/dijiresmi2019nov2019_page-000' + i +'jpg">' +
+								'</div>');
+		}
         $('#features').wowBook({
             height : 500
             ,width  : 800
