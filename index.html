@@ -67,13 +67,7 @@
 			<img class="page" src="pages/0001.jpg">
         </div>
        <div class='feature pagefx hardpage'>
-		<!--<img class="page" src="pages/2019oct15/0002.jpg">-->
-        </div>
-       <div class='feature pagefx softpage'>
 		<img class="page" src="pages/0002.jpg">
-        </div>
-        <div class='feature pagefx hardpage'>
-		<!--<img class="page" src="pages/2019oct15/0002.jpg">-->
         </div>
 
     </div> <!-- features-->
@@ -97,18 +91,17 @@
 
 <script type="text/javascript">
     $(document).ready(function() {
-		for(i=3;i<9;i++){
+		for(i=3;i<=9;i++){
 			$('#features').append('<div class="responsive feature">' +
 									'<img class="page" src="pages/000' + i +'.jpg">' +
 								'</div>');
 		}
-		for(i=10;i<58;i++){
+		for(i=10;i<=31;i++){
 			$('#features').append('<div class="responsive feature">' +
 									'<img class="page" src="pages/00' + i +'.jpg">' +
 								'</div>');
 		}
-	    $('#features').append('<div class="responsive feature"></div>'+
-			'<div class="last_cover"><img class="page" src="images/cover_last.png" width="100%" height="100%" /></div>');
+	    $('#features').append('<div class="last_cover"><img class="page" src="images/cover_last.png" width="100%" height="100%" /></div>');
         $('#features').wowBook({
             height : 500
             ,width  : 800
